@@ -1,0 +1,118 @@
+
+*,::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: hsl(30, 38%, 92%);
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 375px;
+    border-radius: 8px 0px 0px 8px;
+}
+.card{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 375px;
+    padding: 25px;
+    border-radius: 0px 8px 8px 0px;
+
+}
+ul{
+    list-style: none;
+}
+.title{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7em;
+    display: flex;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 4px;
+}
+
+.subtitle{
+    font-family: 'Fraunces', 'serif';
+    font-size: 1.2em;
+    display: flex;
+    margin-top: 15px;
+}
+
+.info-product{
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', serif;
+    margin-top: 20px;
+    font-size: 14px;
+    width: 220px;
+    
+}
+ul{
+    display: flex;
+    margin-top: 15px;
+   
+}
+.preco-atual{
+    font-family: 'Fraunces', 'serif';
+    font-size: 1.7em;
+    color: hsl(158, 36%, 37%);
+}
+.preco-antigo{
+    font-family: 'Montserrat', serif;
+    color: hsl(228, 12%, 48%);
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+}
+button{
+    font-family: 'Montserrat', serif;
+    font-size: 12px;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px;
+    border-radius: 5px;
+    border-style: none;
+    color: white;
+    margin-top: 15px;
+}
+button:hover{
+    background-color: hsl(212, 21%, 14%);
+    cursor: pointer;
+}
+@media screen and (max-width: 375px){
+    main{
+        flex-direction: column;
+    }
+    .imagem-card{
+        border-radius: 8px 8px 0px 0px;
+        height: 210px;
+        width: 320px;
+    }
+    .card{
+        border-radius: 0px 0px 8px 8px;
+        width: 320px;        
+    }
+    .title{
+        font-size: 0.8em;
+    }
+    .info-product{
+        width: 280px;
+    }
+}
+
+
+
